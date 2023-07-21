@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Courgette&family=Dancing+Script:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat&family=Narnoor&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylec.css">
+    <title>C language</title>
+</head>
+<body>
+    <div class="header">
+        <div>C language</div>
+    </div>
+    <div class="sidebar">
+        <div><a href="#intro">Introduction to C</a></div>
+        <div><a href="#features">Features of C</a></div>
+        <div><a href="#syntax">Basic Syntax</a></div>
+        <div><a href="#functions">Functions</a></div>
+        <div><a href="#pointers">Pointers</a></div>
+        <div><a href="#filehandling">File Handling</a></div>
+        <div><a href="#libraries">C Libraries</a></div>
+        <div><a href="#books">Recommended books</a></div>
+        
+    </div>
+    <div class="main__content">
+        <div class="article" id="intro">
+            <p class="heading" >Introduction to C<p>
+            <p class="content">C is a high-level, general-purpose programming language known for its efficiency and versatility. Developed by Dennis Ritchie at Bell Labs in the early 1970s, C was designed to create the Unix operating system. Over the years, it has become one of the most widely used programming languages in the world, serving as the foundation for various other languages.
+
+                Due to its speed, simplicity, and powerful features, C has found applications in various domains, such as system programming, embedded systems, game development, and much more. Its syntax allows for direct manipulation of computer memory, providing low-level access to the machine, while its higher-level constructs offer flexibility and ease of use.</p>
+        </div>
+        <div class="article" id="features">
+            <p class="heading" >Features of C<p>
+            <p class="content">C boasts several essential features that make it a preferred choice for programming:
+
+                <strong>Simplicity:</strong> C's concise syntax and limited set of keywords make it easy to learn and use. Its simplicity allows programmers to express complex ideas using just a few lines of code.
+                
+                <strong>Portability:</strong> C is highly portable, meaning that programs written in C can be easily adapted to run on different platforms and architectures with minimal changes.
+                
+                <strong>Powerful Syntax:</strong> C offers a rich set of operators and features, enabling programmers to perform low-level memory manipulations and write efficient code.
+                
+                <strong>Modularity:</strong> C supports modular programming through the use of functions and libraries, making it easier to organize and maintain code.
+                
+                <strong>Efficiency:</strong> C's direct access to memory and hardware resources allows for optimal performance, making it ideal for system-level programming.</p>
+        </div>
+        <div class="article" id="syntax">
+            <p class="heading" >Basic Syntax<p>
+            <p class="content">
+             
+                Basic Syntax:
+The basic syntax of C serves as the foundation for writing programs in this powerful and versatile programming language. It consists of fundamental elements that help developers express instructions and algorithms in a structured and logical manner.
+
+Comments: Comments are essential for code documentation and understanding. In C, comments can be single-line (//) or multi-line (/* ... */) and are ignored by the compiler during program execution.
+
+Header Files: C programs often include header files (e.g., #include <stdio.h>) to access standard library functions and features. These header files provide essential declarations and definitions needed for various operations.
+
+main() Function: Every C program starts with the main() function. It serves as the entry point of the program, where execution begins and ends. The main() function can have an optional return type (int) and can take command-line arguments as parameters.
+
+Variables and Data Types: Variables are used to store data in a program. In C, you must declare variables before using them. C supports various data types, including int, float, char, double, and user-defined structures. Each data type has a specific range and memory allocation.
+
+Operators: C provides a wide range of operators, such as arithmetic (+, -, *, /, %), relational (<, >, <=, >=, ==, !=), logical (&&, ||, !), and assignment (=) operators. These operators allow for mathematical computations and comparisons.
+
+Control Structures: Control structures help control the flow of a program's execution. C supports if-else statements for decision-making, while, for, and do-while loops for iteration, and switch statements for multi-way branching.
+
+Functions: Functions in C allow programmers to divide a program into smaller, manageable tasks. Each function has a name, return type (if applicable), and parameters. Functions can be user-defined or part of standard libraries, and they are called to execute a specific set of instructions.
+
+Input and Output: C provides input/output functions, such as printf() and scanf(), for displaying output on the screen and receiving input from the user or external sources.
+
+The C programming language's basic syntax is concise yet powerful, making it an excellent choice for various programming tasks, from simple utility programs to complex system-level applications. Mastering the basic syntax allows programmers to build efficient, well-structured, and scalable solutions to real-world problems.
+               
+            </p>
+        </div>
+        <div class="article" id="functions">
+            <p class="heading" >Functions<p>
+            <p class="content">
+                Functions in programming are blocks of code that perform specific tasks or operations. They are essential for breaking down complex problems into smaller, manageable pieces, making code more organized, reusable, and easier to maintain. In C, functions are defined using the syntax return_type function_name(parameters) { // code }, where return_type specifies the type of value the function returns (e.g., int, void, etc.), function_name is the identifier for the function, and parameters are inputs to the function. Functions in C can be user-defined, allowing programmers to create custom functions tailored to their specific needs, or they can be part of standard library functions, providing a wide range of ready-to-use functionalities.
+            
+            </p>
+        </div>
+        <div class="article" id="pointers">
+            <p class="heading" >Pointers in C<p>
+            <p class="content">Pointers in C are variables that store memory addresses rather than actual values. They play a crucial role in memory management and manipulation. By allowing direct access to memory locations, pointers enable more efficient memory usage and the ability to work with complex data structures. Pointers are used to pass data between functions efficiently, dynamically allocate memory (e.g., using malloc), and perform low-level operations on data. However, incorrect usage of pointers can lead to memory leaks, segmentation faults, and other runtime errors, making them both powerful and challenging to work with. Understanding pointers is essential for advanced C programming and system-level development.
+             
+            </p>
+
+        </div>
+        <div class="article" id="filehandling">
+            <p class="heading" >File Handling in C<p>
+            <p class="content">File handling in C allows programmers to work with files, enabling the reading and writing of data to and from external storage devices, such as hard drives, solid-state drives, and more. Files play a crucial role in storing data persistently, even after a program's execution ends, making them invaluable for tasks like data storage, retrieval, and data sharing between programs.C provides a set of standard library functions for file handling, found in the stdio.h header file. The key functions used for file handling include fopen(), fclose(), fread(), fwrite(), fprintf(), and fscanf().File handling allows developers to store and retrieve data in a structured manner, making it invaluable for various applications, such as data logging, configuration files, database management systems, and more. Proper error handling is crucial during file operations to ensure that unexpected issues, such as file not found or permissions errors, are gracefully handled. Additionally, it's essential to close files after use to free up system resources and prevent potential data corruption.
+
+                C's file handling capabilities make it a versatile language for applications that require data storage and manipulation, making it a popular choice for system programming and various data-centric tasks.
+             
+            </p>
+
+        </div>
+        <div class="article" id="libraries">
+            <p class="heading" >Libraries in C<p>
+            <p class="content">In programming, a library is a collection of pre-written code that offers a set of functionalities and tools for developers to use in their projects. C libraries can provide ready-to-use functions, data structures, algorithms, and other utilities that help simplify complex tasks and reduce code duplication. The C Standard Library (libc) is one of the most important libraries in C, containing functions for input/output, string manipulation, math operations, and more. Apart from the standard library, various other libraries are available for specific purposes, such as graphics, networking, and cryptography. By leveraging libraries, developers can save time and effort, focus on solving higher-level problems, and build more robust and feature-rich applications.
+             
+            </p>
+
+        </div>
+        <div class="article" id="books">
+            <p class="heading" >Recommended books<p>
+            <div class="cards">
+                <div class="card">
+                    <div class="card__img">
+                        <img src="./images/letusc.jpeg" alt="Let us C">
+                    </div>
+                    <div class="card__content">
+                        <p>Let us C </p>
+                       
+                        <a href="https://www.amazon.com/s?k=let+us+C&ref=nb_sb_noss" target="_blank">Order on Amazon</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="./images/thec.jpeg" alt="C">
+                    </div>
+                    <div class="card__content">
+                        <p>The C programming language</p>
+                        
+                        <a href="https://www.amazon.com/s?k=the+c+programming+language&ref=nb_sb_ss_ts-doa-p_1_12" target="_blank">Order on Amazon</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
